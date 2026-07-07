@@ -9,7 +9,7 @@ page = st.sidebar.radio("Go to", ["Predict", "About"])
 if page == "About":
     st.write("This project predicts student marks using Machine Learning.")
 model = pickle.load(open("model/model.pkl", "rb"))
-data = pd.read_csv("data/student_data.csv")
+data = pd.read_csv("Data/student_data.csv")
 
 st.title("🎓 Student Performance Predictor")
 
